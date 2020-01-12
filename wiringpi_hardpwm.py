@@ -38,6 +38,8 @@ class Servo(object):
         # ハードウェアPWMはこれがないと止まらない。
         wiringpi.pwmWrite(PIN, 74) # 0deg. (1024 x 7.25%)
 
+        print('done')
+        
 
 if __name__ == '__main__':
     servo = Servo()
